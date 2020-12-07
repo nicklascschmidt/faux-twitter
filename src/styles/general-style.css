@@ -1,0 +1,77 @@
+/*
+-lt: 5% lighter
+-ltr: 10% lighter
+-dk: 5% darker
+-dkr: 10% darker
+
+reference: http://scg.ar-ch.org/
+*/
+
+:root {
+  --c-base:    #666;
+  --c-base-lt: #999;
+  --c-base-dk: #333;
+
+  /* Light Theme */
+  --c-light-primary:     #ffffff;
+  --c-light-primary-lt:  #ffffff;
+  --c-light-primary-ltr: #ffffff;
+  --c-light-primary-dk:  #f2f2f2;
+  --c-light-primary-dkr: #e6e6e6;
+
+  --c-light-secondary: #1ca1f2;
+  --c-light-secondary-lt: #34abf3;
+  --c-light-secondary-ltr: #4cb5f5;
+  --c-light-secondary-dk: #0d95e7;
+  --c-light-secondary-dkr: #0c85cf;
+
+  --c-light-text-primary: rgb(15, 20, 25);
+  --c-light-text-secondary: rgb(91, 112, 131);
+
+  --c-light-text-def: rgb(15, 20, 25);
+  --c-light-text-lt: rgb(91, 112, 131);
+  --c-light-text-ltr: rgb(91, 112, 131); /* none yet */
+  --c-light-text-dk: rgb(91, 112, 131); /* none yet */
+  --c-light-text-dkr: rgb(91, 112, 131); /* none yet */
+
+  --c-light-border-primary: rgb(235, 238, 240);
+
+  --c-light-brand-blue: rgb(26, 145, 218); /* aka accent */
+  --c-light-brand-blue-muted: rgba(29, 161, 242, 0.1);
+
+  /* Action Colors */
+  --c-light-retweet-green: rgb(23, 191, 99);
+  --c-light-retweet-green-muted: rgba(23, 191, 99, 0.1);
+
+  --c-light-like-red: rgb(224, 36, 94);
+  --c-light-like-red-muted: rgba(224, 36, 94, 0.1);
+
+  --c-light-reply-blue: rgb(29, 161, 242, 1.0);
+  --c-light-reply-blue-muted: rgba(29, 161, 242, 0.1);
+
+  
+  /* Dark Theme */
+  --c-dark-primary:     #020202;
+  --c-dark-primary-lt:  #1d2d3c;
+  --c-dark-primary-ltr: #26394d;
+  --c-dark-primary-dk:  #0d131a;
+  --c-dark-primary-dkr: #040609;
+
+  --c-dark-secondary: #1ca1f2;
+  --c-dark-secondary-lt: #34abf3;
+  --c-dark-secondary-ltr: #4cb5f5;
+  --c-dark-secondary-dk: #0d95e7;
+  --c-dark-secondary-dkr: #0c85cf;
+
+  --c-dark-text-primary: #fefefe;
+  --c-dark-text-secondary: #82878d;
+  --c-dark-text-tertiary: #82878d;
+  --c-dark-text-accent: #1a95e0;
+
+  --c-dark-border-primary: #38444d;
+
+}
+
+img {
+  opacity: .75;
+}
