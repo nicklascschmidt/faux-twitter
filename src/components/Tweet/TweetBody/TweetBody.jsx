@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ColumnLayout from '../ColumnLayout/ColumnLayout';
-import TweetUserInfo from './TweetUserInfo/TweetUserInfo';
+import TweetUserInfoBar from './TweetUserInfoBar/TweetUserInfoBar';
 import TweetUserAvi from './TweetUserAvi/TweetUserAvi';
-import TweetInteractionBar from './TweetUserInfo/TweetInteractionBar/TweetInteractionBar';
+import TweetInteractionBar from './TweetUserInfoBar/TweetInteractionBar/TweetInteractionBar';
 
 const Container = styled(ColumnLayout)`
   padding: 10px 0;
@@ -20,7 +20,7 @@ class TweetBody extends Component {
         <Container>
           <TweetUserAvi userInfo={userInfo} />
           <div>
-            <TweetUserInfo userInfo={userInfo} time={time} />
+            <TweetUserInfoBar userInfo={userInfo} time={time} />
             <Content>
               <p>{text}</p>
               <div>{media}</div>
