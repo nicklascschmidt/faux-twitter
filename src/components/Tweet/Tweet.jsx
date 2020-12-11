@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import TweetBody from './TweetBody/TweetBody';
-import ExternalInteraction from './ExternalInteraction/ExternalInteraction';
+import ExternalInteractionBar from './ExternalInteractionBar/ExternalInteractionBar';
 import tweet from './Tweet.data';
 
 /**
@@ -33,7 +33,7 @@ class Tweet extends Component {
     return (
       <Container>
         {externalInteraction && (
-          <ExternalInteraction externalInteraction={externalInteraction} />
+          <ExternalInteractionBar externalInteraction={externalInteraction} />
         )}
         <TweetBody tweet={tweet} />
       </Container>

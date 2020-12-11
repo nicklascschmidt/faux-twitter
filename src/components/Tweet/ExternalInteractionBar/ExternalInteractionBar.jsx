@@ -1,30 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Repeat, Heart, MessageCircle } from 'react-feather';
+import ColumnLayout from '../ColumnLayout/ColumnLayout';
+import InteractionIcon from '../../Icon/InteractionIcon';
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
+const Container = styled(ColumnLayout)`
+  color: ${({ theme }) => theme.textSecondary};
 `;
 
-const Icon = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  flex-basis: 50px;
-  flex-grow: 0;
-  margin-right: 10px;
-  
-  svg {
-    color: ${({ theme }) => theme.textSecondary};
-  }
-`;
+const Icon = styled.div``;
 
 const Text = styled.div`
-  flex-grow: 1;
   font-size: 13px;
+  font-weight: 700;
 `;
 
-const ExternalInteraction = ({ externalInteraction }) => {
+const ExternalInteractionBar = ({ externalInteraction }) => {
   const { type, users } = externalInteraction;
 
   const generateLikeText = (users) => {
@@ -54,25 +44,14 @@ const ExternalInteraction = ({ externalInteraction }) => {
     }
   };
 
-  const generateIcon = (type) => {
-    switch (type) {
-      case 'like':
-        return <Heart size={'18px'} />;
-      case 'retweet':
-        return <Repeat size={'18px'} />;
-      case 'reply':
-        return <MessageCircle size={'18px'} />;
-      default:
-        return null;
-    }
-  };
-
   return (
     <Container>
-      <Icon>{generateIcon(type)}</Icon>
+      <Icon>
+        <InteractionIcon type={type} size={'18px'} strokeWidth={'3px'} />
+      </Icon>
       <Text>{renderDisplayText(users, type)}</Text>
     </Container>
   );
 };
 
-export default ExternalInteraction;
+export default ExternalInteractionBar;
