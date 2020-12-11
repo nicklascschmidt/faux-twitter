@@ -10,7 +10,7 @@ import tweet from './Tweet.data';
     - UN, handle, timestamp (hrs if under 24, otherwise date (18h, Dec 3))
     - (If reply, include Replying to… - see Reply below in variations)
     - tweet body content
-    - Replies, retweets, likes
+    - Replies, retweets, favorites
  */
 
 const Container = styled.div`

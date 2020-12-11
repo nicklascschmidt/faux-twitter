@@ -13,11 +13,11 @@ const Container = styled.div`
 const TweetInteractionBar = ({
   replies,
   retweets,
-  likes,
-  likedByUser,
+  favorites,
+  favoritedByUser,
   retweetedByUser,
 }) => {
-  // const [likes, updateLikes] = useState(likes);
+  // const [favorites, updateFavorites] = useState(favorites);
   return (
     <Container>
       <InteractionCountPair type='reply' amount={replies} />
@@ -27,9 +27,9 @@ const TweetInteractionBar = ({
         isSelected={retweetedByUser}
       />
       <InteractionCountPair
-        type='like'
-        amount={likes}
-        isSelected={likedByUser}
+        type='favorite'
+        amount={favorites}
+        isSelected={favoritedByUser}
       />
     </Container>
   );

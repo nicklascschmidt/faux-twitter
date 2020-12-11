@@ -1,7 +1,7 @@
 const tweet = {
   // optional field
   externalInteraction: {
-    type: 'like', // like || retweet || reply
+    type: 'favorite', // favorite || retweet || reply
     users: ['faux twit'], // [] of names, handle
   },
   userInfo: {
@@ -18,8 +18,8 @@ const tweet = {
   tweetInteractions: {
     replies: 1,
     retweets: 5,
-    likes: 20,
-    likedByUser: false,
+    favorites: 20,
+    favoritedByUser: false,
     retweetedByUser: true,
   },
 };

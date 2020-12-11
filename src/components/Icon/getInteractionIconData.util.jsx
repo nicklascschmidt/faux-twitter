@@ -3,12 +3,12 @@ import { Repeat, Heart, MessageCircle } from 'react-feather';
 
 const getInteractionIconData = (type) => {
   switch (type) {
-    case 'like':
+    case 'favorite':
       return {
         IconElement: Heart,
-        color: 'var(--c-light-like-red)',
-        fill: 'var(--c-light-like-red)',
-        mutedColor: 'var(--c-light-like-red-muted)',
+        color: 'var(--c-light-favorite-red)',
+        fill: 'var(--c-light-favorite-red)',
+        mutedColor: 'var(--c-light-favorite-red-muted)',
       };
     case 'retweet':
       return {
