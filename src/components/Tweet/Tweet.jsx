@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import TweetBody from './TweetBody/TweetBody';
 import ExternalInteraction from './ExternalInteraction/ExternalInteraction';
+import tweet from './Tweet.data';
 
 /**
   - Standard tweet
@@ -12,27 +13,19 @@ import ExternalInteraction from './ExternalInteraction/ExternalInteraction';
     - Replies, retweets, likes
  */
 
-const Container = styled.article`
-  padding: 0 15px;
+const Container = styled.div`
+  cursor: pointer;
+
   border-bottom: 1px solid ${({ theme }) => theme.borderPrimary};
   color: ${({ theme }) => theme.textPrimary};
+
+  padding: 0 15px;
+  padding-top: 15px;
 
   &:hover {
     background-color: ${({ theme }) => theme.primaryDk};
   }
 `;
-
-const InnerContainer = styled.div`
-  padding-top: 10px;
-`;
-
-const tweet = {
-  // optional field
-  externalInteraction: {
-    type: 'like', // like || retweet || reply
-    users: ['faux twit'], // [] of names, handle
-  },
-};
 
 class Tweet extends Component {
   render() {
@@ -42,9 +35,7 @@ class Tweet extends Component {
         {externalInteraction && (
           <ExternalInteraction externalInteraction={externalInteraction} />
         )}
-        <InnerContainer>
-          <TweetBody />
-        </InnerContainer>
+        <TweetBody tweet={tweet} />
       </Container>
     );
   }
