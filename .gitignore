@@ -2,6 +2,8 @@
 
 # custom
 .config.js
+.env
+twitter-guide-server.js
 
 # dependencies
 /node_modules
