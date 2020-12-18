@@ -4,6 +4,9 @@
 .config.js
 .env
 twitter-guide-server.js
+node_modules/
+template/
+.eslintcache
 
 # dependencies
 /node_modules
