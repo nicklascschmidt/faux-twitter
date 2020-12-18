@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Home from '../pages/Main/Main';
+import Home from '../pages/Home/Home';
 import UserProfile from '../pages/UserProfile/UserProfile';
 
 export default () => {
