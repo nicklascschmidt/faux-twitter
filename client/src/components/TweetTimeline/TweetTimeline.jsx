@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import SearchInput from '../SearchInput/SearchInput';
+import { SearchTermContext } from '../Context/SearchTermContext';
 
 const Container = styled.section`
   width: 600px;
@@ -9,6 +11,10 @@ const Container = styled.section`
 
 const PageHeader = styled.header`
   padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
   h2 {
     color: ${({ theme }) => theme.textPrimary};
     font-size: 19px;
@@ -16,25 +22,20 @@ const PageHeader = styled.header`
 `;
 
 class TweetTimeline extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchTerm: '', // faux_twitr
+      updateSearchTerm: this.updateSearchTerm,
+    };
+  }
+
   async componentDidMount() {
     // const url = 'https://stream.twitter.com/1.1/statuses/sample.json';
-    // const resp = await fetch(url, {
-    //   method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    //   // mode: 'cors', // no-cors, *cors, same-origin
-    //   // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    //   // credentials: 'same-origin', // include, *same-origin, omit
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //     // 'Content-Type': 'application/x-www-form-urlencoded',
-    //   },
-    //   // redirect: 'follow', // manual, *follow, error
-    //   // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    //   // body: JSON.stringify(data) // body data type must match "Content-Type" header
-    // })
-
-
     const url = '/user';
-    const resp = await fetch(url)
+    const resp = await fetch(url, {
+      credentials: 'include' // fetch won't send cookies unless you set credentials
+    })
       .then(response => response.json())
       .then(data => {
         console.log(data);
@@ -42,14 +43,26 @@ class TweetTimeline extends Component {
     console.log('resp', resp);
   }
 
+  updateSearchTerm = (searchTerm) => {
+    console.log('attempting to update searchTerm: ', searchTerm);
+    this.setState({ searchTerm });
+  }
+
   render() {
     return (
-      <Container>
-        <PageHeader>
-          <h2>Home</h2>
-        </PageHeader>
-        {this.props.children}
-      </Container>
+      <SearchTermContext.Provider value={this.state}>
+        <Container>
+          <PageHeader>
+            <h2>Home</h2>
+            <SearchTermContext.Consumer>
+              {({ searchTerm, updateSearchTerm }) => (
+                <SearchInput initialValue={searchTerm} handleSubmit={updateSearchTerm} />
+              )}
+            </SearchTermContext.Consumer>
+          </PageHeader>
+          {this.props.children}
+        </Container>
+      </SearchTermContext.Provider>
     );
   }
 }

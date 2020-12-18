@@ -1,19 +1,32 @@
+require('dotenv').config()
+
 const express = require('express');
-// const cors = require('cors');
-const config = require('../config');
+const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 app.use(express.json());
 
-// configure CORS
-// app.use(cors({
-//   origin: true,
-//   credentials: true
-// }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // use routes
+app.use('/api', require('./routes/api'));
 app.use('/user', require('./routes/user'));
 
-app.listen(config.serverPort, () =>
-  console.log(`App listening on port ${config.serverPort}.`)
+const isDev = process.env.NODE_ENV !== 'production';
+const PORT = process.env.PORT || 3001;
+
+// in Prod (Heroku), serve up static assets
+if (!isDev) {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  });
+}
+
+app.listen(PORT, () =>
+  console.log(`App listening on port ${PORT}.`)
 );
+
+module.exports = app;

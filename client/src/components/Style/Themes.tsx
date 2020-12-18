@@ -17,6 +17,7 @@ export const lightTheme = {
   borderPrimary: 'var(--c-light-border-primary)',
   brandBlue: 'var(--c-light-brand-blue)',
   brandBlueMuted: 'var(--c-light-brand-blue-muted)',
+  inputBackground: 'var(--c-light-input-background)',
 };
 
 export const darkTheme = {
@@ -30,4 +31,5 @@ export const darkTheme = {
   borderPrimary: 'var(--c-dark-border-primary)',
   brandBlue: 'var(--c-light-brand-blue)',
   brandBlueMuted: 'var(--c-light-brand-blue-muted)',
+  inputBackground: 'var(--c-dark-input-background)',
 };

@@ -28,6 +28,9 @@ reference: http://scg.ar-ch.org/
   --c-light-text-primary: rgb(15, 20, 25);
   --c-light-text-secondary: rgb(91, 112, 131);
 
+  --c-light-input-background:rgb(235, 238, 240);
+  --c-dark-input-background: rgb(21, 32, 43);
+
   --c-light-text-def: rgb(15, 20, 25);
   --c-light-text-lt: rgb(91, 112, 131);
   --c-light-text-ltr: rgb(91, 112, 131); /* none yet */
@@ -36,7 +39,9 @@ reference: http://scg.ar-ch.org/
 
   --c-light-border-primary: rgb(235, 238, 240);
 
-  --c-light-brand-blue: rgb(26, 145, 218); /* aka accent */
+  /* aka accent */
+  /* --c-light-brand-blue: rgb(26, 145, 218); */
+  --c-light-brand-blue: rgb(26, 161, 242);
   --c-light-brand-blue-muted: rgba(29, 161, 242, 0.1);
 
   /* Action Colors */

@@ -6,8 +6,7 @@ import GlobalStyle from './components/Style/GlobalStyle';
 import { lightTheme, darkTheme } from './components/Style/Themes';
 import { useDarkMode } from './hooks';
 import ThemeToggler from './components/ThemeToggler/ThemeToggler';
-import Main from './pages/Main/Main';
-
+import Routes from './routes/Routes';
 
 const AppContainer = styled.main`
 
@@ -24,7 +23,7 @@ function App() {
         <GlobalStyle />
         <AppContainer>
           <ThemeToggler toggleTheme={toggleTheme} />
-          <Main />
+          <Routes />
         </AppContainer>
       </>
     </ThemeProvider>
