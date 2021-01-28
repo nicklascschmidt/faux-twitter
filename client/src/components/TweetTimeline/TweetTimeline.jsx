@@ -6,25 +6,18 @@ import Tweet from '../Tweet/Tweet';
 const Container = styled.div``;
 
 class TweetTimeline extends Component {
-  async componentDidMount() {
-    // this.getTweetsByUser();
-  }
+  constructor(props) {
+    super(props);
 
-  getTweetsByUser = async () => {
-    const resp = await fetch('/user', {
-      credentials: 'include' // fetch won't send cookies unless you set credentials
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-      })
-    console.log('resp', resp);
+    this.state = {};
   }
 
   render() {
+    const { timelineData } = this.props;
+
     return (
       <Container>
-        <Tweet />
+        {timelineData.map((tweet) => <Tweet key={tweet.id} tweet={tweet} />)}
       </Container>
     );
   }
