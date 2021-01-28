@@ -12,7 +12,6 @@ app.use(bodyParser.json());
 
 // use routes
 app.use('/api', require('./routes/api'));
-app.use('/user', require('./routes/user'));
 
 const isDev = process.env.NODE_ENV !== 'production';
 const PORT = process.env.PORT || 3001;
