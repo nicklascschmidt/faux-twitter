@@ -17,6 +17,8 @@ const StyledInput = styled.input`
 
 const SearchInput = ({ initialValue, handleSubmit }) => {
   const [value, updateValue] = useState(initialValue);
+  const handleKeyDown = (e) =>
+    e.code === 'Enter' && e.target.value !== '' && handleSubmit(e.target.value);
 
   return (
     <StyledInput
@@ -24,7 +26,7 @@ const SearchInput = ({ initialValue, handleSubmit }) => {
       type='text'
       value={value}
       onChange={(e) => updateValue(e.target.value)}
-      onKeyDown={(e) => e.code === 'Enter' && handleSubmit(e.target.value)}
+      onKeyDown={handleKeyDown}
     />
   );
 };
