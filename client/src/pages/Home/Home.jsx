@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import TweetTimeline from '../../components/TweetTimeline/TweetTimeline';
+import TweetTimelineWrapper from '../../components/TweetTimeline/TweetTimelineWrapper';
 import PageHeader from '../../components/PageHeader/PageHeader';
 
 import SearchTermContextWrapper from '../../components/Context/SearchTermContext/SearchTermContextWrapper';
+import { SearchTermContext } from '../../components/Context/SearchTermContext/SearchTermContext';
 
 const Container = styled.section`
   width: 600px;
@@ -18,7 +19,9 @@ class Home extends Component {
       <SearchTermContextWrapper>
         <Container>
           <PageHeader />
-          <TweetTimeline />
+          <SearchTermContext.Consumer>
+            {({ searchTerm }) => <TweetTimelineWrapper searchTerm={searchTerm} />}
+          </SearchTermContext.Consumer>
         </Container>
       </SearchTermContextWrapper>
     );
