@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "author_id": "1334971542225244161",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "reply_settings": "everyone",
+      "conversation_id": "1334972569280241664",
+      "id": "1334972644194738176",
+      "possibly_sensitive": false,
+      "created_at": "2020-12-04T21:27:35.000Z",
+      "lang": "en",
+      "referenced_tweets": [
+        {
+          "type": "replied_to",
+          "id": "1334972569280241664"
+        }
+      ],
+      "in_reply_to_user_id": "1334971542225244161",
+      "text": "a reply to a quote tweet",
+      "source": "Twitter Web App"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "entities": {
+        "urls": [
+          {
+            "start": 18,
+            "end": 41,
+            "url": "https://t.co/PggLcT3DG5",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1334972514536222727",
+            "display_url": "twitter.com/faux_twitr/sta…"
+          }
+        ]
+      },
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 1,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "reply_settings": "everyone",
+      "conversation_id": "1334972569280241664",
+      "id": "1334972569280241664",
+      "possibly_sensitive": false,
+      "created_at": "2020-12-04T21:27:17.000Z",
+      "lang": "fr",
+      "referenced_tweets": [
+        {
+          "type": "quoted",
+          "id": "1334972514536222727"
+        }
+      ],
+      "text": "outer quote tweet https://t.co/PggLcT3DG5",
+      "source": "Twitter Web App"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 1
+      },
+      "reply_settings": "everyone",
+      "conversation_id": "1334972514536222727",
+      "id": "1334972514536222727",
+      "possibly_sensitive": false,
+      "created_at": "2020-12-04T21:27:04.000Z",
+      "lang": "de",
+      "text": "xx inner quote tweet",
+      "source": "Twitter Web App"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "reply_settings": "everyone",
+      "conversation_id": "1334972179813904386",
+      "id": "1334972389168472065",
+      "possibly_sensitive": false,
+      "created_at": "2020-12-04T21:26:34.000Z",
+      "lang": "en",
+      "referenced_tweets": [
+        {
+          "type": "replied_to",
+          "id": "1334972179813904386"
+        }
+      ],
+      "in_reply_to_user_id": "1334971542225244161",
+      "text": "a reply to standard tweet",
+      "source": "Twitter Web App"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "public_metrics": {
+        "retweet_count": 1,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "entities": {
+        "mentions": [
+          {
+            "start": 3,
+            "end": 14,
+            "username": "faux_twitr"
+          }
+        ]
+      },
+      "reply_settings": "everyone",
+      "conversation_id": "1334972234981629956",
+      "id": "1334972234981629956",
+      "possibly_sensitive": false,
+      "created_at": "2020-12-04T21:25:58.000Z",
+      "lang": "en",
+      "referenced_tweets": [
+        {
+          "type": "retweeted",
+          "id": "1334972179813904386"
+        }
+      ],
+      "text": "RT @faux_twitr: standard tweet",
+      "source": "Twitter Web App"
+    }
+  ],
+  "meta": {
+    "oldest_id": "1334972234981629956",
+    "newest_id": "1334972644194738176",
+    "result_count": 5,
+    "next_token": "7140dibdnow9c7btw3w29gt34n1fotzwy5d2ncnsfelva",
+    "previous_token": "77qpymm88g5h9vqkluldpwbfvn6jv2tmvqhooyd31absm"
+  }
+}

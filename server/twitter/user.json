@@ -1,0 +1,19 @@
+{
+  "data": {
+    "protected": false,
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1337474666827554821/bY8EBsF-_normal.jpg",
+    "description": "just a guy who loves music building a thing, I'm not actually david gilmour even tho that'd be sick",
+    "url": "",
+    "verified": false,
+    "public_metrics": {
+      "followers_count": 0,
+      "following_count": 0,
+      "tweet_count": 6,
+      "listed_count": 0
+    },
+    "name": "faux twit",
+    "created_at": "2020-12-04T21:23:38.000Z",
+    "id": "1334971542225244161",
+    "username": "faux_twitr"
+  }
+}
