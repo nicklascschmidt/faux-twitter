@@ -8,9 +8,10 @@ const Container = styled.div``;
  * Searched, user doesn't exist. ie. user resp is empty
  * Searched, user exists, but no tweets to show. ie. user exists in resp, but tweets are empty
  */
-const EmptyTimeline = ({ searchTerm, isUserEmpty }) => {
+const EmptyTimeline = ({ searchTerm, isUserEmpty, isUserPrivate }) => {
   const displayContent = () => {
     if (!searchTerm) return 'Use the search bar to populate the timeline';
+    if (isUserPrivate) return `${searchTerm} is a private account`;
     if (isUserEmpty) return `No tweets found for user "${searchTerm}"`;
     return `${searchTerm} has no tweets to show`;
   };

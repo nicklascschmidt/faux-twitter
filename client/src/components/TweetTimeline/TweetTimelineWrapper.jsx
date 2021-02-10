@@ -13,6 +13,7 @@ class TweetTimelineWrapper extends Component {
       errorMessage: '',
       timelineData: [],
       userData: {},
+      isUserPrivate: false,
     };
   }
 
@@ -36,29 +37,31 @@ class TweetTimelineWrapper extends Component {
      * TODO: need to find a better place to store
      * userData, timelineData, timelineMetaData (pagination info)
      */
-    const userData = await this.fetchUser(searchTerm);
+    const { data: userData = {} } = await this.fetchUser(searchTerm);
     console.log('userData', userData);
 
-    const timelineData = userData.id ? await this.fetchTweetsByUser(userData.id) : [];
+    const { data: timelineData = {}, isUserPrivate = false } = userData.id
+      ? await this.fetchTweetsByUser(userData.id)
+      : [];
+
     console.log('timelineData', timelineData);
 
-    this.setState({ userData, timelineData, isLoading: false });
+    this.setState({
+      userData,
+      timelineData,
+      isLoading: false,
+      isUserPrivate,
+    });
   };
 
-  fetchUser = (userHandle) => {
-    return fetch(`/api/user/${userHandle}`)
-      .then((response) => response.json())
-      .catch((err) => this.setState(err.message));
-  };
+  fetchUser = (userHandle) => fetch(`/api/user/${userHandle}`)
+    .catch((err) => console.log(err));
 
-  fetchTweetsByUser = (userId) => {
-    return fetch(`/api/user/${userId}/tweets`)
-      .then((response) => response.json())
-      .catch((err) => this.setState(err.message));
-  };
+  fetchTweetsByUser = (userId) => fetch(`/api/user/${userId}/tweets`)
+    .catch((err) => console.log(err));
 
   render() {
-    const { isLoading, errorMessage, timelineData, userData } = this.state;
+    const { isLoading, errorMessage, isUserPrivate, timelineData, userData } = this.state;
     const { searchTerm } = this.props;
 
     if (isLoading) return <Loading />;
@@ -71,6 +74,7 @@ class TweetTimelineWrapper extends Component {
           <EmptyTimeline
             searchTerm={searchTerm}
             isUserEmpty={Object.keys(userData).length === 0}
+            isUserPrivate={isUserPrivate}
           />
         )}
       </>

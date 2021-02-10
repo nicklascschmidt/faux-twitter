@@ -43,13 +43,11 @@ router.get('/:userHandle', async (req, res) => {
   const { userHandle } = req.params;
 
   try {
-    const userResp = await fetchUser(userHandle);
-    const user = _.get(userResp, 'data.data', {});
-    console.log('user', user);
-    res.send(user)
+    const { data: userData } = await fetchUser(userHandle);
+    res.status(200).json(userData); 
   } catch (err) {
-    console.log('hit an error 1', err.stack);
-    res.send(err.message);
+    console.log('fetchUser err', err.stack);
+    res.status(500).send(err.message);
   }
 });
 
@@ -58,17 +56,23 @@ router.get('/:userId/tweets', async (req, res) => {
   const { userId } = req.params;
 
   try {
-    const timelineResp = await fetchTimeline(userId);
-    const timeline = _.get(timelineResp, 'data.data', []);
+    const { data: timelineData } = await fetchTimeline(userId);
 
-    res.send(timeline);
+    if (timelineData.data) {
+      res.status(200).json(timelineData);
+    } else if (
+      timelineData.errors &&
+      timelineData.errors[0].title === 'Authorization Error'
+    ) {
+      res.status(403).json({ isUserPrivate: true });
+    } else {
+      res.status(404).send('Error fetching user tweets');
+    }
 
   } catch (err) {
-    console.log('hit an error 2', err.stack);
-    res.send(err.message);
+    console.log('fetchTimeline err', err.stack);
+    res.status(500).send(err.message);
   }
-
-  // res.send(userJson)
-})
+});
 
 module.exports = router;
