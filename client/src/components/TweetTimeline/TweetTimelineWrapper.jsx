@@ -55,9 +55,11 @@ class TweetTimelineWrapper extends Component {
   };
 
   fetchUser = (userHandle) => fetch(`/api/user/${userHandle}`)
+    .then(res => res.json())
     .catch((err) => console.log(err));
 
   fetchTweetsByUser = (userId) => fetch(`/api/user/${userId}/tweets`)
+    .then(res => res.json())
     .catch((err) => console.log(err));
 
   render() {
