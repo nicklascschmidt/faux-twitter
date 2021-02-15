@@ -1,0 +1,140 @@
+{
+  "data": [
+    {
+      "source": "Twitter Web App",
+      "possibly_sensitive": false,
+      "reply_settings": "everyone",
+      "lang": "de",
+      "created_at": "2020-12-04T21:27:04.000Z",
+      "text": "xx inner quote tweet",
+      "id": "1334972514536222727",
+      "author_id": "1334971542225244161",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 1
+      },
+      "conversation_id": "1334972514536222727"
+    },
+    {
+      "source": "Twitter Web App",
+      "in_reply_to_user_id": "1334971542225244161",
+      "possibly_sensitive": false,
+      "reply_settings": "everyone",
+      "lang": "en",
+      "created_at": "2020-12-04T21:26:34.000Z",
+      "referenced_tweets": [
+        {
+          "type": "replied_to",
+          "id": "1334972179813904386"
+        }
+      ],
+      "text": "a reply to standard tweet",
+      "id": "1334972389168472065",
+      "author_id": "1334971542225244161",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "conversation_id": "1334972179813904386"
+    },
+    {
+      "source": "Twitter Web App",
+      "possibly_sensitive": false,
+      "reply_settings": "everyone",
+      "lang": "en",
+      "created_at": "2020-12-04T21:25:58.000Z",
+      "entities": {
+        "mentions": [
+          {
+            "start": 3,
+            "end": 14,
+            "username": "faux_twitr"
+          }
+        ]
+      },
+      "referenced_tweets": [
+        {
+          "type": "retweeted",
+          "id": "1334972179813904386"
+        }
+      ],
+      "text": "RT @faux_twitr: standard tweet",
+      "id": "1334972234981629956",
+      "author_id": "1334971542225244161",
+      "public_metrics": {
+        "retweet_count": 1,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "conversation_id": "1334972234981629956"
+    },
+    {
+      "source": "Twitter Web App",
+      "possibly_sensitive": false,
+      "reply_settings": "everyone",
+      "lang": "en",
+      "created_at": "2020-12-04T21:25:44.000Z",
+      "text": "standard tweet",
+      "id": "1334972179813904386",
+      "author_id": "1334971542225244161",
+      "public_metrics": {
+        "retweet_count": 1,
+        "reply_count": 1,
+        "like_count": 1,
+        "quote_count": 0
+      },
+      "conversation_id": "1334972179813904386"
+    }
+  ],
+  "includes": {
+    "users": [
+      {
+        "public_metrics": {
+          "followers_count": 0,
+          "following_count": 0,
+          "tweet_count": 14,
+          "listed_count": 0
+        },
+        "protected": false,
+        "verified": false,
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1337474666827554821/bY8EBsF-_normal.jpg",
+        "id": "1334971542225244161",
+        "name": "faux twit",
+        "username": "faux_twitr",
+        "created_at": "2020-12-04T21:23:38.000Z",
+        "url": "",
+        "description": "I am not david gilmour altho that'd be sick"
+      }
+    ],
+    "tweets": [
+      {
+        "source": "Twitter Web App",
+        "possibly_sensitive": false,
+        "reply_settings": "everyone",
+        "lang": "en",
+        "created_at": "2020-12-04T21:25:44.000Z",
+        "text": "standard tweet",
+        "id": "1334972179813904386",
+        "author_id": "1334971542225244161",
+        "public_metrics": {
+          "retweet_count": 1,
+          "reply_count": 1,
+          "like_count": 1,
+          "quote_count": 0
+        },
+        "conversation_id": "1334972179813904386"
+      }
+    ]
+  },
+  "meta": {
+    "oldest_id": "1334972179813904386",
+    "newest_id": "1334972514536222727",
+    "result_count": 4,
+    "previous_token": "77qpymm88g5h9vqkluldpwbfvn6irqi2eiirgew9ck7cn"
+  }
+}

@@ -1,0 +1,627 @@
+{
+  "data": [
+    {
+      "author_id": "1334971542225244161",
+      "entities": {
+        "urls": [
+          {
+            "start": 29,
+            "end": 52,
+            "url": "https://t.co/7tuf2WmSzM",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1361418121622343683/photo/1",
+            "display_url": "pic.twitter.com/7tuf2WmSzM"
+          },
+          {
+            "start": 29,
+            "end": 52,
+            "url": "https://t.co/7tuf2WmSzM",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1361418121622343683/photo/1",
+            "display_url": "pic.twitter.com/7tuf2WmSzM"
+          },
+          {
+            "start": 29,
+            "end": 52,
+            "url": "https://t.co/7tuf2WmSzM",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1361418121622343683/photo/1",
+            "display_url": "pic.twitter.com/7tuf2WmSzM"
+          },
+          {
+            "start": 29,
+            "end": 52,
+            "url": "https://t.co/7tuf2WmSzM",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1361418121622343683/photo/1",
+            "display_url": "pic.twitter.com/7tuf2WmSzM"
+          }
+        ]
+      },
+      "attachments": {
+        "media_keys": [
+          "3_1361417978177146883",
+          "3_1361417978193973248",
+          "3_1361417978193928193",
+          "3_1361418097610006532"
+        ]
+      },
+      "id": "1361418121622343683",
+      "text": "four media attachment images https://t.co/7tuf2WmSzM",
+      "possibly_sensitive": false,
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "lang": "fr",
+      "source": "Twitter Web App",
+      "conversation_id": "1361418121622343683",
+      "created_at": "2021-02-15T20:52:28.000Z",
+      "reply_settings": "everyone"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "entities": {
+        "urls": [
+          {
+            "start": 30,
+            "end": 53,
+            "url": "https://t.co/cXeG2itDOy",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1360332732832698370/photo/1",
+            "display_url": "pic.twitter.com/cXeG2itDOy"
+          },
+          {
+            "start": 30,
+            "end": 53,
+            "url": "https://t.co/cXeG2itDOy",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1360332732832698370/photo/1",
+            "display_url": "pic.twitter.com/cXeG2itDOy"
+          },
+          {
+            "start": 30,
+            "end": 53,
+            "url": "https://t.co/cXeG2itDOy",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1360332732832698370/photo/1",
+            "display_url": "pic.twitter.com/cXeG2itDOy"
+          }
+        ]
+      },
+      "attachments": {
+        "media_keys": [
+          "3_1360332725622689793",
+          "3_1360332725635280898",
+          "3_1360332725635350528"
+        ]
+      },
+      "id": "1360332732832698370",
+      "text": "three media attachment images https://t.co/cXeG2itDOy",
+      "possibly_sensitive": false,
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "lang": "en",
+      "source": "Twitter Web App",
+      "conversation_id": "1360332732832698370",
+      "created_at": "2021-02-12T20:59:31.000Z",
+      "reply_settings": "everyone"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "id": "1360039374813949955",
+      "in_reply_to_user_id": "721785269159010304",
+      "entities": {
+        "mentions": [
+          {
+            "start": 0,
+            "end": 13,
+            "username": "RabbiAladdin"
+          }
+        ]
+      },
+      "referenced_tweets": [
+        {
+          "type": "replied_to",
+          "id": "1349925587364708354"
+        }
+      ],
+      "text": "@RabbiAladdin me fauxT replying to rabaladd",
+      "possibly_sensitive": false,
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "lang": "en",
+      "source": "Twitter Web App",
+      "conversation_id": "1349925587364708354",
+      "created_at": "2021-02-12T01:33:49.000Z",
+      "reply_settings": "everyone"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "entities": {
+        "urls": [
+          {
+            "start": 28,
+            "end": 51,
+            "url": "https://t.co/zV7kwvwpJV",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1360008273362001922/photo/1",
+            "display_url": "pic.twitter.com/zV7kwvwpJV"
+          },
+          {
+            "start": 28,
+            "end": 51,
+            "url": "https://t.co/zV7kwvwpJV",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1360008273362001922/photo/1",
+            "display_url": "pic.twitter.com/zV7kwvwpJV"
+          }
+        ]
+      },
+      "attachments": {
+        "media_keys": ["3_1360008194093772800", "3_1360008194211205120"]
+      },
+      "id": "1360008273362001922",
+      "text": "two media attachment images https://t.co/zV7kwvwpJV",
+      "possibly_sensitive": false,
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "lang": "en",
+      "source": "Twitter Web App",
+      "conversation_id": "1360008273362001922",
+      "created_at": "2021-02-11T23:30:14.000Z",
+      "reply_settings": "everyone"
+    },
+    {
+      "text": "this is a tweet with media content (pic) https://t.co/y2uGuwZzSh",
+      "created_at": "2020-12-18T23:10:53.000Z",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 1
+      },
+      "possibly_sensitive": false,
+      "reply_settings": "everyone",
+      "entities": {
+        "urls": [
+          {
+            "start": 41,
+            "end": 64,
+            "url": "https://t.co/y2uGuwZzSh",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1340072068893782018/photo/1",
+            "display_url": "pic.twitter.com/y2uGuwZzSh"
+          }
+        ]
+      },
+      "conversation_id": "1340072068893782018",
+      "attachments": {
+        "media_keys": ["3_1340071965651054593"]
+      },
+      "lang": "en",
+      "author_id": "1334971542225244161",
+      "id": "1340072068893782018",
+      "source": "Twitter Web App"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "entities": {
+        "urls": [
+          {
+            "start": 25,
+            "end": 48,
+            "url": "https://t.co/bT3XWblBNb",
+            "expanded_url": "https://twitter.com/faux_twitr/status/1340072068893782018",
+            "display_url": "twitter.com/faux_twitr/sta…"
+          }
+        ]
+      },
+      "id": "1359978667259092995",
+      "referenced_tweets": [
+        {
+          "type": "quoted",
+          "id": "1340072068893782018"
+        }
+      ],
+      "text": "quote tweeting media 123 https://t.co/bT3XWblBNb",
+      "possibly_sensitive": false,
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "lang": "en",
+      "source": "Twitter Web App",
+      "conversation_id": "1359978667259092995",
+      "created_at": "2021-02-11T21:32:36.000Z",
+      "reply_settings": "everyone"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "id": "1359972776577179657",
+      "entities": {
+        "mentions": [
+          {
+            "start": 3,
+            "end": 16,
+            "username": "RabbiAladdin"
+          },
+          {
+            "start": 23,
+            "end": 38,
+            "username": "babymccabybaby"
+          }
+        ]
+      },
+      "referenced_tweets": [
+        {
+          "type": "retweeted",
+          "id": "1359276213089439745"
+        }
+      ],
+      "text": "RT @RabbiAladdin: cred @babymccabybaby",
+      "possibly_sensitive": false,
+      "public_metrics": {
+        "retweet_count": 1,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "lang": "en",
+      "source": "Twitter Web App",
+      "conversation_id": "1359972776577179657",
+      "created_at": "2021-02-11T21:09:11.000Z",
+      "reply_settings": "everyone"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "id": "1359663486863724548",
+      "entities": {
+        "mentions": [
+          {
+            "start": 3,
+            "end": 16,
+            "username": "RabbiAladdin"
+          }
+        ]
+      },
+      "referenced_tweets": [
+        {
+          "type": "retweeted",
+          "id": "1352075192160325635"
+        }
+      ],
+      "text": "RT @RabbiAladdin: Flamin Yawn",
+      "possibly_sensitive": false,
+      "public_metrics": {
+        "retweet_count": 1,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "lang": "en",
+      "source": "Twitter Web App",
+      "conversation_id": "1359663486863724548",
+      "created_at": "2021-02-11T00:40:11.000Z",
+      "reply_settings": "everyone"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "id": "1354567788174614531",
+      "text": "the 10th tweet",
+      "possibly_sensitive": false,
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "lang": "en",
+      "source": "Twitter Web App",
+      "conversation_id": "1354567788174614531",
+      "created_at": "2021-01-27T23:11:42.000Z",
+      "reply_settings": "everyone"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "id": "1354567754536239105",
+      "text": "the 9th tweet",
+      "possibly_sensitive": false,
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "lang": "en",
+      "source": "Twitter Web App",
+      "conversation_id": "1354567754536239105",
+      "created_at": "2021-01-27T23:11:33.000Z",
+      "reply_settings": "everyone"
+    },
+    {
+      "author_id": "1334971542225244161",
+      "id": "1354567728615440387",
+      "text": "the 8th tweet",
+      "possibly_sensitive": false,
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0
+      },
+      "lang": "en",
+      "source": "Twitter Web App",
+      "conversation_id": "1354567728615440387",
+      "created_at": "2021-01-27T23:11:27.000Z",
+      "reply_settings": "everyone"
+    }
+  ],
+  "includes": {
+    "media": [
+      {
+        "type": "photo",
+        "media_key": "3_1361417978177146883",
+        "height": 294,
+        "width": 300,
+        "url": "https://pbs.twimg.com/media/EuS6cCQUUAMIiLV.jpg"
+      },
+      {
+        "type": "photo",
+        "media_key": "3_1361417978193973248",
+        "height": 300,
+        "width": 300,
+        "url": "https://pbs.twimg.com/media/EuS6cCUVEAARJTH.png"
+      },
+      {
+        "type": "photo",
+        "media_key": "3_1361417978193928193",
+        "height": 220,
+        "width": 220,
+        "url": "https://pbs.twimg.com/media/EuS6cCUUYAEVwzH.jpg"
+      },
+      {
+        "type": "photo",
+        "media_key": "3_1361418097610006532",
+        "height": 678,
+        "width": 750,
+        "url": "https://pbs.twimg.com/media/EuS6i_LVIAQZSuT.jpg"
+      },
+      {
+        "type": "photo",
+        "media_key": "3_1360332725622689793",
+        "height": 300,
+        "width": 300,
+        "url": "https://pbs.twimg.com/media/EuDfaBcUUAERQEU.png"
+      },
+      {
+        "type": "photo",
+        "media_key": "3_1360332725635280898",
+        "height": 294,
+        "width": 300,
+        "url": "https://pbs.twimg.com/media/EuDfaBfUcAIu3Dx.jpg"
+      },
+      {
+        "type": "photo",
+        "media_key": "3_1360332725635350528",
+        "height": 220,
+        "width": 220,
+        "url": "https://pbs.twimg.com/media/EuDfaBfVgAAdXz3.jpg"
+      },
+      {
+        "type": "photo",
+        "media_key": "3_1360008194093772800",
+        "height": 294,
+        "width": 300,
+        "url": "https://pbs.twimg.com/media/Et-4PzSUcAAl4Am.jpg"
+      },
+      {
+        "type": "photo",
+        "media_key": "3_1360008194211205120",
+        "height": 220,
+        "width": 220,
+        "url": "https://pbs.twimg.com/media/Et-4PzuUUAAj88H.jpg"
+      },
+      {
+        "width": 2560,
+        "media_key": "3_1340071965651054593",
+        "url": "https://pbs.twimg.com/media/EpjkWk4XMAE1hz6.jpg",
+        "height": 2560,
+        "type": "photo"
+      }
+    ],
+    "users": [
+      {
+        "url": "",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1337474666827554821/bY8EBsF-_normal.jpg",
+        "public_metrics": {
+          "followers_count": 0,
+          "following_count": 0,
+          "tweet_count": 17,
+          "listed_count": 0
+        },
+        "verified": false,
+        "created_at": "2020-12-04T21:23:38.000Z",
+        "id": "1334971542225244161",
+        "name": "faux twit",
+        "protected": false,
+        "username": "faux_twitr",
+        "description": "I am not david gilmour altho that'd be sick"
+      },
+      {
+        "url": "",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/721791393820069889/wEI4WXwX_normal.jpg",
+        "public_metrics": {
+          "followers_count": 29,
+          "following_count": 64,
+          "tweet_count": 909,
+          "listed_count": 1
+        },
+        "verified": false,
+        "pinned_tweet_id": "995579264362672128",
+        "created_at": "2016-04-17T19:39:53.000Z",
+        "id": "721785269159010304",
+        "name": "Rabbi Aladdin",
+        "protected": false,
+        "username": "RabbiAladdin",
+        "description": "plz help me choose a name for my new band. here are some options"
+      },
+      {
+        "url": "",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1324442064805720065/Zm4pt1Zm_normal.jpg",
+        "public_metrics": {
+          "followers_count": 20,
+          "following_count": 61,
+          "tweet_count": 180,
+          "listed_count": 1
+        },
+        "verified": false,
+        "pinned_tweet_id": "1358498316523237376",
+        "created_at": "2020-11-05T20:00:51.000Z",
+        "id": "1324441539766968320",
+        "name": "pablo discobar",
+        "protected": false,
+        "username": "babymccabybaby",
+        "description": "mucho party mucho money"
+      }
+    ],
+    "tweets": [
+      {
+        "author_id": "721785269159010304",
+        "id": "1349925587364708354",
+        "text": "The Sweetest Potato",
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "retweet_count": 0,
+          "reply_count": 1,
+          "like_count": 0,
+          "quote_count": 0
+        },
+        "lang": "en",
+        "source": "Twitter Web App",
+        "context_annotations": [
+          {
+            "domain": {
+              "id": "66",
+              "name": "Interests and Hobbies Category",
+              "description": "A grouping of interests and hobbies entities, like Novelty Food or Destinations"
+            },
+            "entity": {
+              "id": "824777229892661248",
+              "name": "Generic Food",
+              "description": "Generic Food"
+            }
+          },
+          {
+            "domain": {
+              "id": "67",
+              "name": "Interests and Hobbies",
+              "description": "Interests, opinions, and behaviors of individuals, groups, or cultures; like Speciality Cooking or Theme Parks"
+            },
+            "entity": {
+              "id": "842474490294493184",
+              "name": "Potato",
+              "description": "Potato"
+            }
+          }
+        ],
+        "conversation_id": "1349925587364708354",
+        "created_at": "2021-01-15T03:45:15.000Z",
+        "reply_settings": "everyone"
+      },
+      {
+        "author_id": "1334971542225244161",
+        "entities": {
+          "urls": [
+            {
+              "start": 41,
+              "end": 64,
+              "url": "https://t.co/y2uGuwZzSh",
+              "expanded_url": "https://twitter.com/faux_twitr/status/1340072068893782018/photo/1",
+              "display_url": "pic.twitter.com/y2uGuwZzSh"
+            }
+          ]
+        },
+        "attachments": {
+          "media_keys": ["3_1340071965651054593"]
+        },
+        "id": "1340072068893782018",
+        "text": "this is a tweet with media content (pic) https://t.co/y2uGuwZzSh",
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "retweet_count": 0,
+          "reply_count": 0,
+          "like_count": 0,
+          "quote_count": 1
+        },
+        "lang": "en",
+        "source": "Twitter Web App",
+        "conversation_id": "1340072068893782018",
+        "created_at": "2020-12-18T23:10:53.000Z",
+        "reply_settings": "everyone"
+      },
+      {
+        "author_id": "721785269159010304",
+        "id": "1359276213089439745",
+        "in_reply_to_user_id": "721785269159010304",
+        "entities": {
+          "mentions": [
+            {
+              "start": 5,
+              "end": 20,
+              "username": "babymccabybaby"
+            }
+          ]
+        },
+        "referenced_tweets": [
+          {
+            "type": "replied_to",
+            "id": "1359276168998834176"
+          }
+        ],
+        "text": "cred @babymccabybaby",
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "retweet_count": 1,
+          "reply_count": 0,
+          "like_count": 0,
+          "quote_count": 0
+        },
+        "lang": "en",
+        "source": "Twitter Web App",
+        "conversation_id": "1359276168998834176",
+        "created_at": "2021-02-09T23:01:17.000Z",
+        "reply_settings": "everyone"
+      },
+      {
+        "author_id": "721785269159010304",
+        "id": "1352075192160325635",
+        "text": "Flamin Yawn",
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "retweet_count": 1,
+          "reply_count": 0,
+          "like_count": 0,
+          "quote_count": 0
+        },
+        "lang": "en",
+        "source": "Twitter Web App",
+        "conversation_id": "1352075192160325635",
+        "created_at": "2021-01-21T02:07:00.000Z",
+        "reply_settings": "everyone"
+      }
+    ]
+  },
+  "meta": {
+    "oldest_id": "1354567728615440387",
+    "newest_id": "1361418121622343683",
+    "result_count": 10,
+    "next_token": "7140dibdnow9c7btw3w33rzrrjzjzrdk3rqse23qqhlbr"
+  }
+}

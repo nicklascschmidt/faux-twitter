@@ -1,0 +1,31 @@
+{
+  "conversation_id": "1340072068893782018",
+  "source": "Twitter Web App",
+  "public_metrics": {
+    "retweet_count": 0,
+    "reply_count": 0,
+    "like_count": 0,
+    "quote_count": 0
+  },
+  "possibly_sensitive": false,
+  "text": "this is a tweet with media content (pic) https://t.co/y2uGuwZzSh",
+  "attachments": {
+    "media_keys": ["3_1340071965651054593"]
+  },
+  "lang": "en",
+  "id": "1340072068893782018",
+  "reply_settings": "everyone",
+  "entities": {
+    "urls": [
+      {
+        "start": 41,
+        "end": 64,
+        "url": "https://t.co/y2uGuwZzSh",
+        "expanded_url": "https://twitter.com/faux_twitr/status/1340072068893782018/photo/1",
+        "display_url": "pic.twitter.com/y2uGuwZzSh"
+      }
+    ]
+  },
+  "author_id": "1334971542225244161",
+  "created_at": "2020-12-18T23:10:53.000Z"
+}
