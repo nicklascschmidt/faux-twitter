@@ -1,6 +1,8 @@
 const _ = require('lodash');
 const express = require('express');
 const axios = require('axios');
+const { camelizeKeys } = require('humps');
+const parseTimeline = require('../../parsers/tweetParser');
 const router = express.Router();
 
 /**TODO:
@@ -8,7 +10,8 @@ const router = express.Router();
  * split up each type of call into diff files for org
  */
 const sampleUser = require('../../twitter/user.json');
-const sampleTweetTimeline = require('../../twitter/tweets.json');
+// const sampleTweetTimeline = require('../../twitter/tweetsExpansions.json');
+const sampleTweetTimeline = require('../../twitter/tweetsMediaImages.json');
 
 /* TODO: toggle for testing */
 const testMode = true;
@@ -51,7 +54,7 @@ router.get('/:userHandle', async (req, res) => {
 
   try {
     const { data: userData } = await fetchUser(userHandle);
-    res.status(200).send(userData); 
+    res.status(200).send(camelizeKeys(userData));
   } catch (err) {
     console.log('fetchUser err', err.stack);
     res.status(500).send(err.message);
@@ -66,7 +69,7 @@ router.get('/:userId/tweets', async (req, res) => {
     const { data: timelineData } = await fetchTimeline(userId);
 
     if (timelineData.data) {
-      res.status(200).send(timelineData);
+      res.status(200).send(parseTimeline(camelizeKeys(timelineData.data)));
     } else if (
       timelineData.errors &&
       timelineData.errors[0].title === 'Authorization Error'
