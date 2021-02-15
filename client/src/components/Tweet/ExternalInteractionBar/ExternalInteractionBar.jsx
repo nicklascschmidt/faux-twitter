@@ -14,42 +14,19 @@ const Text = styled.div`
   font-weight: 700;
 `;
 
-const ExternalInteractionBar = ({ externalInteraction }) => {
-  const { type, users } = externalInteraction;
-
-  const generateFavoriteText = (users) => {
-    switch (users.length) {
-      case 0:
-        return null;
-      case 1:
-        return `${users[0]} favorited`;
-      case 2:
-        return `${users[0]} and ${users[1]} favorited`;
-      default:
-        return `${users[0]} and ${users.length - 1} others favorited`;
-    }
-  };
-
-  const renderDisplayText = (users, type) => {
-    /** TODO: turn these into links to the user's profile page */
-    switch (type) {
-      case 'favorite':
-        return generateFavoriteText(users);
-      case 'retweet':
-        return `${users[0]} Retweeted`;
-      case 'reply':
-        return `${users[0]} received a reply`;
-      default:
-        return null;
-    }
-  };
-
+/** TODO:
+ * turn these into links to the user's profile page
+ * add tooltip that shows author info highlights
+*/
+const ExternalInteractionBar = ({ author, type }) => {
+  const { name } = author;
+  
   return (
     <Container>
       <Icon>
         <InteractionIcon type={type} size={'18px'} strokeWidth={'3px'} />
       </Icon>
-      <Text>{renderDisplayText(users, type)}</Text>
+      <Text>{`${name} Retweeted`}</Text>
     </Container>
   );
 };

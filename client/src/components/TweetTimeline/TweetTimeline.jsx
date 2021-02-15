@@ -17,7 +17,9 @@ class TweetTimeline extends Component {
 
     return (
       <Container>
-        {timelineData.map((tweet) => <Tweet key={`timeline-tweet-${tweet.id}`} tweet={tweet} />)}
+        {timelineData.map((tweetData) => (
+          <Tweet key={`timeline-tweet-${tweetData.id}`} tweet={tweetData} />
+        ))}
       </Container>
     );
   }

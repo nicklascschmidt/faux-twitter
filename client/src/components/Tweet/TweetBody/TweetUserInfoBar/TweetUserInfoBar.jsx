@@ -11,13 +11,13 @@ const UserHandle = styled.span`
   color: ${({ theme }) => theme.textSecondary};
 `;
 
-const TweetUserInfoBar = ({ userInfo, time }) => {
-  const { name, handle } = userInfo;
+const TweetUserInfoBar = ({ userInfo, createdAt }) => {
+  const { name, username } = userInfo;
   return (
     <Container>
       <UserName>{name}</UserName>
-      <UserHandle>{handle}</UserHandle>
-      <time dateTime={time}>Dec 6</time>
+      <UserHandle>{username}</UserHandle>
+      <time dateTime={createdAt}>Dec 6</time>
     </Container>
   );
 };

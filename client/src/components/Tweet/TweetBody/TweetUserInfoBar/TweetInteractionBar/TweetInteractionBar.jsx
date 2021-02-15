@@ -11,25 +11,29 @@ const Container = styled.div`
 `;
 
 const TweetInteractionBar = ({
-  replies,
-  retweets,
-  favorites,
-  favoritedByUser,
+  replyCount,
+  retweetCount,
+  likeCount,
+  likedByUser,
   retweetedByUser,
 }) => {
-  // const [favorites, updateFavorites] = useState(favorites);
+  // const [likes, updateLikes] = useState(likes);
+
+  /**TODO:
+   * add logic to determine if faved/RTed by user by checking against localStorage
+   */
   return (
     <Container>
-      <InteractionCountPair type='reply' amount={replies} />
+      <InteractionCountPair type='repliedTo' amount={replyCount} />
       <InteractionCountPair
-        type='retweet'
-        amount={retweets}
+        type='retweeted'
+        amount={retweetCount}
         isSelected={retweetedByUser}
       />
       <InteractionCountPair
-        type='favorite'
-        amount={favorites}
-        isSelected={favoritedByUser}
+        type='liked'
+        amount={likeCount}
+        isSelected={likedByUser}
       />
     </Container>
   );

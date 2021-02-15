@@ -12,11 +12,11 @@ const Avi = styled.div`
 `;
 
 const TweetUserAvi = ({ userInfo }) => {
-  const { avi } = userInfo;
+  const { profileImageUrl } = userInfo;
   return (
     <Container>
       <Avi>
-        <img src={avi} alt='err' />
+        <img src={profileImageUrl} alt='err' />
       </Avi>
     </Container>
   );

@@ -1,27 +1,36 @@
 const tweet = {
-  // optional field
-  externalInteraction: {
-    type: 'favorite', // favorite || retweet || reply
-    users: ['faux twit'], // [] of names, handle
-  },
   userInfo: {
+    // ...userData
     name: 'James',
-    handle: '@CaucasianJames',
-    avi:
+    username: '@CaucasianJames',
+    profileImageUrl:
       'https://twirpz.files.wordpress.com/2015/06/twitter-avi-gender-balanced-figure.png',
   },
-  tweetInfo: {
-    time: Date.now(),
-    text: 'hello, i am a tweet text',
-    media: 'something.jpg',
-  },
+  createdAt: Date.now(),
+  text: 'hello, i am a tweet text',
+  
   tweetInteractions: {
     replies: 1,
     retweets: 5,
-    favorites: 20,
-    favoritedByUser: false,
+    likes: 20,
+    likedByUser: false,
     retweetedByUser: true,
   },
+
+  referencedTweet: {
+    type: 'quoted', // 'retweeted' || replied_to
+    id: '123456',
+    // ...restOfTweetData
+  },
+  mediaAttachments: [
+    {
+      // width
+      // mediaKey
+      // url
+      // height
+      // type
+    },
+  ],
 };
 
 export default tweet;
