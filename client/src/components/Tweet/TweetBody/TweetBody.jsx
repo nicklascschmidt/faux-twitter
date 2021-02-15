@@ -4,6 +4,7 @@ import ColumnLayout from '../ColumnLayout/ColumnLayout';
 import TweetUserInfoBar from './TweetUserInfoBar/TweetUserInfoBar';
 import TweetUserAvi from './TweetUserAvi/TweetUserAvi';
 import TweetInteractionBar from './TweetUserInfoBar/TweetInteractionBar/TweetInteractionBar';
+import Media from '../../Media/Media';
 
 const Container = styled(ColumnLayout)`
   padding: 10px 0;
@@ -13,19 +14,27 @@ const Content = styled.div``;
 
 class TweetBody extends Component {
   render() {
-    const { userInfo, tweetInfo, tweetInteractions } = this.props.tweet;
-    const { time, text, media } = tweetInfo;
+    const {
+      userInfo,
+      tweetInteractions,
+
+      text,
+      createdAt,
+      publicMetrics,
+      mediaAttachments,
+    } = this.props.tweet;
+    
     return (
       <article>
         <Container>
           <TweetUserAvi userInfo={userInfo} />
           <div>
-            <TweetUserInfoBar userInfo={userInfo} time={time} />
+            <TweetUserInfoBar userInfo={userInfo} createdAt={createdAt} />
             <Content>
               <p>{text}</p>
-              <div>{media}</div>
+              <Media mediaAttachments={mediaAttachments} />
             </Content>
-            <TweetInteractionBar {...tweetInteractions} />
+            <TweetInteractionBar {...publicMetrics} />
           </div>
         </Container>
       </article>

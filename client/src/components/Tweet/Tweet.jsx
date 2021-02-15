@@ -1,16 +1,16 @@
+import _get from 'lodash/get';
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import TweetBody from './TweetBody/TweetBody';
 import ExternalInteractionBar from './ExternalInteractionBar/ExternalInteractionBar';
-import tweet from './Tweet.data';
 
 /**
   - Standard tweet
     - User icon - left component
-    - UN, handle, timestamp (hrs if under 24, otherwise date (18h, Dec 3))
+    - UN, username (handle), timestamp (hrs if under 24, otherwise date (18h, Dec 3))
     - (If reply, include Replying to… - see Reply below in variations)
     - tweet body content
-    - Replies, retweets, favorites
+    - Replies, retweets, likes
  */
 
 const Container = styled.div`
@@ -28,12 +28,17 @@ const Container = styled.div`
 `;
 
 class Tweet extends Component {
+  /**TODO:
+   * work out logic to determine author and pass into TweetBody
+   */
   render() {
-    const { externalInteraction } = tweet;
+    const { tweet } = this.props;
+    const refTweetType = _get(tweet, 'referencedTweet.type', '');
+
     return (
       <Container>
-        {externalInteraction && (
-          <ExternalInteractionBar externalInteraction={externalInteraction} />
+        {refTweetType === 'retweeted' && (
+          <ExternalInteractionBar author={tweet.userInfo} type={refTweetType} />
         )}
         <TweetBody tweet={tweet} />
       </Container>

@@ -40,9 +40,9 @@ class TweetTimelineWrapper extends Component {
     const { data: userData = {} } = await this.fetchUser(searchTerm);
     console.log('userData', userData);
 
-    const { data: timelineData = {}, isUserPrivate = false } = userData.id
+    const { data: timelineData = {}, isUserPrivate = false } = (userData.id
       ? await this.fetchTweetsByUser(userData.id)
-      : [];
+      : []);
 
     console.log('timelineData', timelineData);
 
@@ -71,7 +71,7 @@ class TweetTimelineWrapper extends Component {
       <>
         {errorMessage && <div>{ errorMessage }</div>}
         {timelineData.length > 0 ? (
-          <TweetTimeline timelineData={timelineData} />
+          <TweetTimeline {...{ userData, timelineData }} />
         ) : (
           <EmptyTimeline
             searchTerm={searchTerm}
