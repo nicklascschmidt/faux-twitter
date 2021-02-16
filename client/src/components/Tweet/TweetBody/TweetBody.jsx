@@ -12,6 +12,10 @@ const Container = styled(ColumnLayout)`
 
 const Content = styled.div``;
 
+const Text = styled.p`
+  margin-top: 5px;
+`;
+
 class TweetBody extends Component {
   render() {
     const {
@@ -31,7 +35,7 @@ class TweetBody extends Component {
           <div>
             <TweetUserInfoBar userInfo={userInfo} createdAt={createdAt} />
             <Content>
-              <p>{text}</p>
+              <Text>{text}</Text>
               <Media mediaAttachments={mediaAttachments} />
             </Content>
             <TweetInteractionBar {...publicMetrics} />

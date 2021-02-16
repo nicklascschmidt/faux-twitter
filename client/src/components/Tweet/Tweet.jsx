@@ -20,7 +20,6 @@ const Container = styled.div`
   color: ${({ theme }) => theme.textPrimary};
 
   padding: 0 15px;
-  padding-top: 15px;
 
   &:hover {
     background-color: ${({ theme }) => theme.primaryDk};
