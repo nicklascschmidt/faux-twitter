@@ -1,4 +1,4 @@
-# twitter-rebuild
+# Faux Twitter
 
 Fake Twitter site built to mimic Twitter\'s UI, where users search for Twitter users to view tweets.
 
